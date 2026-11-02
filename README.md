@@ -1,93 +1,75 @@
-#  Astro Play
+# 🚀 Astro Play
 
-### Don't just read about space. Be the astronaut who solves its problems.
+### Run a Moon or Mars outpost. Every choice costs something.
 
-Astro Play is an interactive 3D space-exploration game in **Arabic and English**, built for kids and teens in the Arab
-world. Every level is a real problem inspired by NASA missions, and the player has to explore, analyze, decide and
-live with the result of their decision.
+**NASA Space Apps Challenge 2026 · Challenge: Build a Junior Astronaut Mission Trainer**
+
+Astro Play is an interactive 3D space game in **Arabic and English** for kids aged 7–12 (and anyone curious). Players
+become astronauts, explore the Moon, Mars, an orbital lab and Europa, and make the kind of trade-offs real mission
+planners face: *power or shielding? oxygen or one more experiment?*
 
 > **NASA data → Mission → Player explores and analyzes → AI explains → Player decides → Sees the consequence**
 
 ---
 
-## 💡 The idea
+## 💡 Why Astro Play
 
-Most educational space games are quizzes: read a fact, pick an answer, move on. Astro Play flips this. There is no
-"correct button" waiting at the end. The player is dropped into a situation, for example **a power outage at a lunar
-base**, and has to work out what is wrong using the tools and data an astronaut would actually have.
+Space content for kids is often too abstract (posters and general facts) or too technical to hold a young learner's
+attention. Either way, children see a mission's outcomes but never the **decisions** behind them. Astro Play puts those
+decisions in the player's hands:
 
-The goal is to teach **scientific thinking, data analysis and problem solving** through a fun experience, in a language
-young people in the Arab world feel at home in.
+- There is **no cost-free choice**. Every option gives something up.
+- Learning comes from **doing**: scan, sample, analyze, diagnose, repair, decide.
+- Failing is part of learning, with a debrief that explains *why*, not a punishment.
+- Everything is available **in Arabic and English**, with correct right-to-left layout.
 
-## 🎮 How a mission plays
-
-1. **Sign in and choose your age.** The whole game adapts to it.
-2. **Customize your astronaut** (suit colour) and open the **galaxy map**.
-3. **Pick a world and a mission**: the Moon, Mars, an Orbital Lab or Jupiter's moon Europa.
-4. **Mission briefing:** understand the problem and the objectives.
-5. **Explore the surface in first person** with mission-specific tools:
-   - **Scanner:** find and diagnose the broken system
-   - **Sample Collector:** take a sample of the ground
-   - **Spectrometer:** study what it is made of
-   - **Repair Kit:** apply the fix
-6. **Analyze** the sample at the habitat's science analyzer and read the evidence in the **evidence log**.
-7. **Decide.** The repair stage asks real reasoning questions. Choosing the fix that works *in that environment* is the
-   whole challenge, and a wrong choice has consequences.
-8. **Debrief.** A summary of what you learned plus a short quiz for bonus XP, stars and achievements.
-
-Then it's on to the next night, and the next world. Mars looks, sounds and behaves nothing like the Moon.
-
-## 🤖 The AI Space Assistant (RAG)
-
-Stuck on a term, a number or a graph? Press **Q** and ask.
-
-- Answers are **grounded in NASA educational sources** through **retrieval-augmented generation** (ChromaDB vector
-  search + Google Gemini), not made up.
-- It has **clear limits**: if a question is outside its knowledge base, it says so instead of inventing an answer.
-- It **nudges instead of spoiling.** It explains the science without handing over the mission's solution.
-- It works fully in **Arabic and English**, streams answers as they are written, and falls back to built-in notes if
-  there is no internet.
-- No API key? The game and the assistant still work offline.
-
-## 🎚️ A game that grows with the player
-
-| Age group | What changes |
+## ✅ What works today
+| Feature | Details |
 |---|---|
-| **6-9** | Short, playful explanations, simple wording, easier questions, more visual guidance |
-| **10-13** | Fuller explanations, real terminology, more reasoning in the repair questions |
-| **14+** | Precise scientific detail, harder decisions, deeper analysis |
+| **4 explorable 3D worlds** | Moon → Mars → Orbital Lab → Europa, each with its own terrain, sky, sounds and challenges |
+| **Mission loop** | Scan the site → collect a sample → analyze it → diagnose the broken system → choose the repair that works in that environment |
+| **Survival constraints** | Oxygen drains outside the habitat (alarms at 30% and 15%); tool batteries drain with use and recharge at the locker |
+| **Habitat on every map** | Airlock, science analyzer, bunk (rest + checkpoint), tool locker, oxygen station |
+| **AI Space Assistant (RAG)** | Answers from NASA-based sources (ChromaDB + Google Gemini), stays within its knowledge, says so when it can't answer, and nudges instead of giving the solution |
+| **Adaptive to the player** | Wording, questions, hints and difficulty adjust to age group and performance |
+| **Debrief and quiz** | After each mission: what you learned, plus a quiz for bonus XP, stars and achievements |
+| **Fully bilingual** | Arabic and English with proper letter joining, RTL layout and Arabic typing |
+| **Works offline** | Without internet or an API key, the assistant answers from built-in notes |
 
-Difficulty also adapts to how the player performs (Easy / Normal / Hard), and it changes how fast oxygen drains.
+## 🛰️ Built for this challenge: Outpost Command
 
-## 🧑‍🚀 Feels like being there
+> **Status: in development for the hackathon (13–14 Nov 2026).** The items below are our plan, not shipped features.
 
-- **Survival:** oxygen drains outside the habitat, with warnings and alarms at 30% and 15%. Tool batteries run down
-  with use and are recharged at the tool locker.
-- **A real habitat on every map:** airlock, science analyzer, bunk (rest + checkpoint), tool locker and an outdoor
-  oxygen station.
-- **First-person astronaut:** suited arms, the tool in your hand, and a wristwatch that shows your oxygen.
-- **Living worlds:** craters, boulders, dust, footprints, dunes on Mars, ice shards on Europa, and skies with a real
-  Earth, Jupiter and Sun.
-- **Sound that reacts to you:** footsteps that change by surface (dust, gravel, ice, metal), breathing that speeds up
-  as oxygen drops, doors, tools and alarms, plus original music.
-- **Proper Arabic:** correctly joined, right-to-left, with the whole layout mirrored, and Arabic typing for names and
-  questions.
+A new mode where the player **runs a lunar or Martian outpost** over a series of sols:
 
-## 🌍 Why it matters
+- **Three core resources:** power, life support (oxygen and food) and radiation shielding, plus communication delay as
+  an event. Few systems, so young players can follow them, but with real consequences.
+- **Real trade-offs:** reinforce shielding before a solar event and lose tonight's power. Spend oxygen reserves on an
+  extra research opportunity and live with the margin.
+- **Real NASA data behind the risk:** radiation-event likelihood follows recent solar activity from **DONKI**, so a
+  shielding decision connects to real space weather.
+- **Real research as fact cards:** short findings from **OSDR** on astronaut health and biology.
+- **Honest data:** every source is labeled in-game. Archived data is marked as archived and never presented as live.
+- **Replayable:** events vary between playthroughs, so kids can try new strategies and learn from failure.
+- **Same AI assistant:** explains terms like *radiation dose* and *sol* in plain language, in Arabic or English.
 
-- Arabic-language space education that treats kids as **problem solvers**, not quiz takers.
-- Builds habits that matter beyond space: **read the evidence, test an idea, weigh a decision, learn from the result.**
-- Made to be understood by a 7-year-old and still be worth playing at 17.
-- Built around **NASA's real science and missions**, which makes the discoveries feel like theirs.
+## 📡 NASA data and sources
+| Source | Use in Astro Play |
+|---|---|
+| [DONKI](https://api.nasa.gov/) (Space Weather Database) | Solar activity that drives radiation risk in Outpost Command *(planned)* |
+| [OSDR](https://osdr.nasa.gov/) (Open Science Data Repository) | Astronaut health and biology findings as fact cards *(planned)* |
+| NASA Moon, Mars, Europa and ISS pages | Knowledge base for the AI assistant (listed in `data/knowledge_sources.txt`, loaded with `scripts/ingest_nasa.py`) |
+
+The built-in offline notes are short educational summaries written in our own words about topics covered by NASA
+resources. Always verify facts against the original NASA pages.
 
 ## 🛠️ Technologies
-
 | Area | Technology |
 |---|---|
 | Language | Python 3.10+ |
 | Game engine / 3D | [Ursina Engine](https://www.ursinaengine.org/) (built on Panda3D) |
-| AI assistant | Google Gemini (`google-genai`) |
-| RAG / knowledge base | NASA educational pages indexed in ChromaDB (vector search), with built-in keyword search as fallback |
+| AI assistant | Google Gemini (`google-genai`) with retrieval-augmented generation |
+| Knowledge base | NASA content indexed in ChromaDB (vector search), with built-in keyword search as fallback |
 | Database | SQLite: profiles, progress, XP, stars, achievements |
 | Arabic support | `arabic-reshaper` + `python-bidi`, bundled Cairo font |
 | Art and audio | Procedurally generated with NumPy, SciPy and Pillow |
@@ -100,8 +82,8 @@ Difficulty also adapts to how the player performs (Easy / Normal / Hard), and it
 | Key | Action |
 |---|---|
 | WASD / mouse | Move / look |
-| 1-4 or scroll | Select tool |
-| E or left click | Use the tool or station you are looking at |
+| 1-4 or scroll | Select tool (Scanner, Sample Collector, Spectrometer, Repair Kit) |
+| E or left click | Use the tool or the station you are looking at |
 | H | Hint |
 | Q | Ask the AI Space Assistant |
 | Tab | Evidence log |
@@ -111,7 +93,10 @@ Difficulty also adapts to how the player performs (Easy / Normal / Hard), and it
 
 
 ## 👩‍🚀 Team
-Made by the **Astro Play** team.
+**Merhan Medhat** · **Basmala Saeed** · **Tahany Emad** · **Aml Ashraf** · **Rawan Hany** · **Alaa Elsayed**
 
-*Astro Play is an independent project. NASA sources are used for educational purposes, and the project is not
-endorsed by NASA.*
+## 📜 Notes
+Astro Play is an independent project made for the NASA Space Apps Challenge. It uses publicly available NASA data and
+educational content and is not endorsed by NASA. The Astro Play base prototype (3D worlds, UI, bilingual system and AI
+assistant) was created before the event. Outpost Command and the DONKI/OSDR integration are being built during the
+hackathon.
