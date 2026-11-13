@@ -1,0 +1,6 @@
+# One NASA page URL per line (blank lines and # comments ignored). Used by scripts/ingest_nasa.py
+# Review each page's reuse policy: https://www.nasa.gov/nasa-brand-center/images-and-media/
+https://science.nasa.gov/moon/facts/
+https://science.nasa.gov/mars/facts/
+https://science.nasa.gov/jupiter/jupiter-moons/europa/facts/
+https://www.nasa.gov/international-space-station/space-station-research-and-technology/
