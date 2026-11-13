@@ -1,0 +1,513 @@
+{
+ "fetched_at": "2026-11-09T16:54:40",
+ "window": [
+  "2026-10-10",
+  "2026-11-09"
+ ],
+ "counts": {
+  "flare_x": 0,
+  "flare_m": 11,
+  "flare_c": 3,
+  "flare_minor": 0,
+  "cme": 87,
+  "gst": 2,
+  "gst_strong": 1,
+  "sep": 0
+ },
+ "provenance": {
+  "source": "NASA CCMC DONKI (Space Weather Database Of Notifications, Knowledge, Information)",
+  "documentation": "https://ccmc.gsfc.nasa.gov/DONKI/api/",
+  "base_url": "https://ccmc.gsfc.nasa.gov/DONKI-API/get",
+  "authentication": "none",
+  "date_format": "yyyy-MM-dd",
+  "returned_by_endpoint": {
+   "FLR": 14,
+   "CME": 87,
+   "GST": 2,
+   "SEP": 0
+  },
+  "note": "Event values are copied verbatim from the API responses (only the fields the game uses are kept). counts are derived from these events with nasa_data.summarize(). Archived data is never live data."
+ },
+ "events": {
+  "FLR": [
+   {
+    "flrID": "2026-10-10T13:56:00-FLR-001",
+    "classType": "M1.2",
+    "beginTime": "2026-10-10T13:56Z",
+    "peakTime": "2026-10-10T14:12Z",
+    "endTime": "2026-10-10T14:27Z"
+   },
+   {
+    "flrID": "2026-10-10T14:58:00-FLR-001",
+    "classType": "M6.4",
+    "beginTime": "2026-10-10T14:58Z",
+    "peakTime": "2026-10-10T15:10Z",
+    "endTime": "2026-10-10T15:20Z"
+   },
+   {
+    "flrID": "2026-10-16T15:38:00-FLR-001",
+    "classType": "M1.3",
+    "beginTime": "2026-10-16T15:38Z",
+    "peakTime": "2026-10-16T15:42Z",
+    "endTime": "2026-10-16T15:45Z"
+   },
+   {
+    "flrID": "2026-10-19T08:54:00-FLR-001",
+    "classType": "M1.6",
+    "beginTime": "2026-10-19T08:54Z",
+    "peakTime": "2026-10-19T09:03Z",
+    "endTime": "2026-10-19T09:16Z"
+   },
+   {
+    "flrID": "2026-10-23T03:43:00-FLR-001",
+    "classType": "C1.3",
+    "beginTime": "2026-10-23T03:43Z",
+    "peakTime": "2026-10-23T03:55Z",
+    "endTime": "2026-10-23T04:10Z"
+   },
+   {
+    "flrID": "2026-10-26T08:21:00-FLR-001",
+    "classType": "C1.9",
+    "beginTime": "2026-10-26T08:21Z",
+    "peakTime": "2026-10-26T08:38Z",
+    "endTime": "2026-10-26T08:51Z"
+   },
+   {
+    "flrID": "2026-10-26T18:17:00-FLR-001",
+    "classType": "C2.8",
+    "beginTime": "2026-10-26T18:17Z",
+    "peakTime": "2026-10-26T18:40Z",
+    "endTime": "2026-10-26T19:02Z"
+   },
+   {
+    "flrID": "2026-11-05T18:21:00-FLR-001",
+    "classType": "M3.5",
+    "beginTime": "2026-11-05T18:21Z",
+    "peakTime": "2026-11-05T18:33Z",
+    "endTime": "2026-11-05T18:41Z"
+   },
+   {
+    "flrID": "2026-11-07T12:26:00-FLR-001",
+    "classType": "M1.2",
+    "beginTime": "2026-11-07T12:26Z",
+    "peakTime": "2026-11-07T12:43Z",
+    "endTime": "2026-11-07T12:48Z"
+   },
+   {
+    "flrID": "2026-11-07T17:11:00-FLR-001",
+    "classType": "M1.4",
+    "beginTime": "2026-11-07T17:11Z",
+    "peakTime": "2026-11-07T17:17Z",
+    "endTime": "2026-11-07T17:24Z"
+   },
+   {
+    "flrID": "2026-11-07T18:21:00-FLR-001",
+    "classType": "M1.9",
+    "beginTime": "2026-11-07T18:21Z",
+    "peakTime": "2026-11-07T18:42Z",
+    "endTime": "2026-11-07T18:56Z"
+   },
+   {
+    "flrID": "2026-11-08T07:33:00-FLR-001",
+    "classType": "M1.7",
+    "beginTime": "2026-11-08T07:33Z",
+    "peakTime": "2026-11-08T07:46Z",
+    "endTime": "2026-11-08T07:54Z"
+   },
+   {
+    "flrID": "2026-11-08T15:29:00-FLR-001",
+    "classType": "M1.1",
+    "beginTime": "2026-11-08T15:29Z",
+    "peakTime": "2026-11-08T15:37Z",
+    "endTime": "2026-11-08T15:49Z"
+   },
+   {
+    "flrID": "2026-11-08T18:15:00-FLR-001",
+    "classType": "M1.1",
+    "beginTime": "2026-11-08T18:15Z",
+    "peakTime": "2026-11-08T18:27Z",
+    "endTime": "2026-11-08T18:35Z"
+   }
+  ],
+  "CME": [
+   {
+    "activityID": "2026-10-10T08:36:00-CME-001",
+    "startTime": "2026-10-10T08:36Z"
+   },
+   {
+    "activityID": "2026-10-10T12:23:00-CME-001",
+    "startTime": "2026-10-10T12:23Z"
+   },
+   {
+    "activityID": "2026-10-10T16:15:00-CME-001",
+    "startTime": "2026-10-10T16:15Z"
+   },
+   {
+    "activityID": "2026-10-10T22:00:00-CME-001",
+    "startTime": "2026-10-10T22:00Z"
+   },
+   {
+    "activityID": "2026-10-11T09:12:00-CME-001",
+    "startTime": "2026-10-11T09:12Z"
+   },
+   {
+    "activityID": "2026-10-11T23:12:00-CME-001",
+    "startTime": "2026-10-11T23:12Z"
+   },
+   {
+    "activityID": "2026-10-11T23:15:00-CME-001",
+    "startTime": "2026-10-11T23:15Z"
+   },
+   {
+    "activityID": "2026-10-12T05:09:00-CME-001",
+    "startTime": "2026-10-12T05:09Z"
+   },
+   {
+    "activityID": "2026-10-12T10:09:00-CME-001",
+    "startTime": "2026-10-12T10:09Z"
+   },
+   {
+    "activityID": "2026-10-12T12:23:00-CME-001",
+    "startTime": "2026-10-12T12:23Z"
+   },
+   {
+    "activityID": "2026-10-12T19:36:00-CME-001",
+    "startTime": "2026-10-12T19:36Z"
+   },
+   {
+    "activityID": "2026-10-14T13:36:00-CME-001",
+    "startTime": "2026-10-14T13:36Z"
+   },
+   {
+    "activityID": "2026-10-14T22:09:00-CME-001",
+    "startTime": "2026-10-14T22:09Z"
+   },
+   {
+    "activityID": "2026-10-14T23:12:00-CME-001",
+    "startTime": "2026-10-14T23:12Z"
+   },
+   {
+    "activityID": "2026-10-15T20:24:00-CME-001",
+    "startTime": "2026-10-15T20:24Z"
+   },
+   {
+    "activityID": "2026-10-16T06:09:00-CME-001",
+    "startTime": "2026-10-16T06:09Z"
+   },
+   {
+    "activityID": "2026-10-16T07:12:00-CME-001",
+    "startTime": "2026-10-16T07:12Z"
+   },
+   {
+    "activityID": "2026-10-16T08:12:00-CME-001",
+    "startTime": "2026-10-16T08:12Z"
+   },
+   {
+    "activityID": "2026-10-16T11:48:00-CME-001",
+    "startTime": "2026-10-16T11:48Z"
+   },
+   {
+    "activityID": "2026-10-16T12:38:00-CME-001",
+    "startTime": "2026-10-16T12:38Z"
+   },
+   {
+    "activityID": "2026-10-16T15:12:00-CME-001",
+    "startTime": "2026-10-16T15:12Z"
+   },
+   {
+    "activityID": "2026-10-16T17:00:00-CME-001",
+    "startTime": "2026-10-16T17:00Z"
+   },
+   {
+    "activityID": "2026-10-16T20:24:00-CME-001",
+    "startTime": "2026-10-16T20:24Z"
+   },
+   {
+    "activityID": "2026-10-17T02:48:00-CME-001",
+    "startTime": "2026-10-17T02:48Z"
+   },
+   {
+    "activityID": "2026-10-17T17:00:00-CME-001",
+    "startTime": "2026-10-17T17:00Z"
+   },
+   {
+    "activityID": "2026-10-17T18:12:00-CME-001",
+    "startTime": "2026-10-17T18:12Z"
+   },
+   {
+    "activityID": "2026-10-18T21:30:00-CME-001",
+    "startTime": "2026-10-18T21:30Z"
+   },
+   {
+    "activityID": "2026-10-18T23:15:00-CME-001",
+    "startTime": "2026-10-18T23:15Z"
+   },
+   {
+    "activityID": "2026-10-19T14:48:00-CME-001",
+    "startTime": "2026-10-19T14:48Z"
+   },
+   {
+    "activityID": "2026-10-19T19:15:00-CME-001",
+    "startTime": "2026-10-19T19:15Z"
+   },
+   {
+    "activityID": "2026-10-20T01:26:00-CME-001",
+    "startTime": "2026-10-20T01:26Z"
+   },
+   {
+    "activityID": "2026-10-20T07:24:00-CME-001",
+    "startTime": "2026-10-20T07:24Z"
+   },
+   {
+    "activityID": "2026-10-20T09:09:00-CME-001",
+    "startTime": "2026-10-20T09:09Z"
+   },
+   {
+    "activityID": "2026-10-20T14:23:00-CME-001",
+    "startTime": "2026-10-20T14:23Z"
+   },
+   {
+    "activityID": "2026-10-21T08:53:00-CME-001",
+    "startTime": "2026-10-21T08:53Z"
+   },
+   {
+    "activityID": "2026-10-21T13:38:00-CME-001",
+    "startTime": "2026-10-21T13:38Z"
+   },
+   {
+    "activityID": "2026-10-21T20:36:00-CME-001",
+    "startTime": "2026-10-21T20:36Z"
+   },
+   {
+    "activityID": "2026-10-22T20:12:00-CME-001",
+    "startTime": "2026-10-22T20:12Z"
+   },
+   {
+    "activityID": "2026-10-22T22:12:00-CME-001",
+    "startTime": "2026-10-22T22:12Z"
+   },
+   {
+    "activityID": "2026-10-23T04:18:00-CME-001",
+    "startTime": "2026-10-23T04:18Z"
+   },
+   {
+    "activityID": "2026-10-23T10:24:00-CME-001",
+    "startTime": "2026-10-23T10:24Z"
+   },
+   {
+    "activityID": "2026-10-23T16:36:00-CME-001",
+    "startTime": "2026-10-23T16:36Z"
+   },
+   {
+    "activityID": "2026-10-24T15:12:00-CME-001",
+    "startTime": "2026-10-24T15:12Z"
+   },
+   {
+    "activityID": "2026-10-24T18:00:00-CME-001",
+    "startTime": "2026-10-24T18:00Z"
+   },
+   {
+    "activityID": "2026-10-24T18:08:00-CME-001",
+    "startTime": "2026-10-24T18:08Z"
+   },
+   {
+    "activityID": "2026-10-24T20:36:00-CME-001",
+    "startTime": "2026-10-24T20:36Z"
+   },
+   {
+    "activityID": "2026-10-24T21:48:00-CME-001",
+    "startTime": "2026-10-24T21:48Z"
+   },
+   {
+    "activityID": "2026-10-24T22:24:00-CME-001",
+    "startTime": "2026-10-24T22:24Z"
+   },
+   {
+    "activityID": "2026-10-25T03:12:00-CME-001",
+    "startTime": "2026-10-25T03:12Z"
+   },
+   {
+    "activityID": "2026-10-25T05:00:00-CME-001",
+    "startTime": "2026-10-25T05:00Z"
+   },
+   {
+    "activityID": "2026-10-25T09:48:00-CME-001",
+    "startTime": "2026-10-25T09:48Z"
+   },
+   {
+    "activityID": "2026-10-25T19:24:00-CME-001",
+    "startTime": "2026-10-25T19:24Z"
+   },
+   {
+    "activityID": "2026-10-26T00:12:00-CME-001",
+    "startTime": "2026-10-26T00:12Z"
+   },
+   {
+    "activityID": "2026-10-26T01:26:00-CME-001",
+    "startTime": "2026-10-26T01:26Z"
+   },
+   {
+    "activityID": "2026-10-26T02:12:00-CME-001",
+    "startTime": "2026-10-26T02:12Z"
+   },
+   {
+    "activityID": "2026-10-26T09:00:00-CME-001",
+    "startTime": "2026-10-26T09:00Z"
+   },
+   {
+    "activityID": "2026-10-26T09:48:00-CME-001",
+    "startTime": "2026-10-26T09:48Z"
+   },
+   {
+    "activityID": "2026-10-26T18:48:00-CME-001",
+    "startTime": "2026-10-26T18:48Z"
+   },
+   {
+    "activityID": "2026-10-26T20:48:00-CME-001",
+    "startTime": "2026-10-26T20:48Z"
+   },
+   {
+    "activityID": "2026-10-27T06:48:00-CME-001",
+    "startTime": "2026-10-27T06:48Z"
+   },
+   {
+    "activityID": "2026-10-27T12:53:00-CME-001",
+    "startTime": "2026-10-27T12:53Z"
+   },
+   {
+    "activityID": "2026-10-28T00:00:00-CME-001",
+    "startTime": "2026-10-28T00:00Z"
+   },
+   {
+    "activityID": "2026-10-28T11:12:00-CME-001",
+    "startTime": "2026-10-28T11:12Z"
+   },
+   {
+    "activityID": "2026-10-29T10:36:00-CME-001",
+    "startTime": "2026-10-29T10:36Z"
+   },
+   {
+    "activityID": "2026-10-30T12:36:00-CME-001",
+    "startTime": "2026-10-30T12:36Z"
+   },
+   {
+    "activityID": "2026-10-31T05:00:00-CME-001",
+    "startTime": "2026-10-31T05:00Z"
+   },
+   {
+    "activityID": "2026-11-01T00:00:00-CME-001",
+    "startTime": "2026-11-01T00:00Z"
+   },
+   {
+    "activityID": "2026-11-01T19:00:00-CME-001",
+    "startTime": "2026-11-01T19:00Z"
+   },
+   {
+    "activityID": "2026-11-01T19:48:00-CME-001",
+    "startTime": "2026-11-01T19:48Z"
+   },
+   {
+    "activityID": "2026-11-03T09:36:00-CME-001",
+    "startTime": "2026-11-03T09:36Z"
+   },
+   {
+    "activityID": "2026-11-04T02:48:00-CME-001",
+    "startTime": "2026-11-04T02:48Z"
+   },
+   {
+    "activityID": "2026-11-05T04:24:00-CME-001",
+    "startTime": "2026-11-05T04:24Z"
+   },
+   {
+    "activityID": "2026-11-05T11:48:00-CME-001",
+    "startTime": "2026-11-05T11:48Z"
+   },
+   {
+    "activityID": "2026-11-05T20:00:00-CME-001",
+    "startTime": "2026-11-05T20:00Z"
+   },
+   {
+    "activityID": "2026-11-05T21:24:00-CME-001",
+    "startTime": "2026-11-05T21:24Z"
+   },
+   {
+    "activityID": "2026-11-06T01:26:00-CME-001",
+    "startTime": "2026-11-06T01:26Z"
+   },
+   {
+    "activityID": "2026-11-06T10:53:00-CME-001",
+    "startTime": "2026-11-06T10:53Z"
+   },
+   {
+    "activityID": "2026-11-06T13:15:00-CME-001",
+    "startTime": "2026-11-06T13:15Z"
+   },
+   {
+    "activityID": "2026-11-06T16:15:00-CME-001",
+    "startTime": "2026-11-06T16:15Z"
+   },
+   {
+    "activityID": "2026-11-06T20:24:00-CME-001",
+    "startTime": "2026-11-06T20:24Z"
+   },
+   {
+    "activityID": "2026-11-07T06:24:00-CME-001",
+    "startTime": "2026-11-07T06:24Z"
+   },
+   {
+    "activityID": "2026-11-07T09:36:00-CME-001",
+    "startTime": "2026-11-07T09:36Z"
+   },
+   {
+    "activityID": "2026-11-07T10:24:00-CME-001",
+    "startTime": "2026-11-07T10:24Z"
+   },
+   {
+    "activityID": "2026-11-07T18:30:00-CME-001",
+    "startTime": "2026-11-07T18:30Z"
+   },
+   {
+    "activityID": "2026-11-08T00:48:00-CME-001",
+    "startTime": "2026-11-08T00:48Z"
+   },
+   {
+    "activityID": "2026-11-08T08:48:00-CME-001",
+    "startTime": "2026-11-08T08:48Z"
+   },
+   {
+    "activityID": "2026-11-09T09:12:00-CME-001",
+    "startTime": "2026-11-09T09:12Z"
+   }
+  ],
+  "GST": [
+   {
+    "gstID": "2026-10-10T15:00:00-GST-001",
+    "startTime": "2026-10-10T15:00Z",
+    "allKpIndex": [
+     {
+      "kpIndex": 7.0,
+      "observedTime": "2026-10-10T18:00Z",
+      "source": "NOAA"
+     },
+     {
+      "kpIndex": 6.67,
+      "observedTime": "2026-10-10T21:00Z",
+      "source": "NOAA"
+     }
+    ]
+   },
+   {
+    "gstID": "2026-10-31T18:00:00-GST-001",
+    "startTime": "2026-10-31T18:00Z",
+    "allKpIndex": [
+     {
+      "kpIndex": 6.0,
+      "observedTime": "2026-10-31T21:00Z",
+      "source": "NOAA"
+     }
+    ]
+   }
+  ],
+  "SEP": []
+ }
+}
