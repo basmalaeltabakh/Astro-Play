@@ -13,7 +13,8 @@ def main():
     Text.default_resolution = 1080 * Text.size      # crisp text
     app = Ursina(title="Astro Play", borderless=False, development_mode=False, size=(1280, 720))
     db = Database(config.DB_PATH)
-    assistant = SpaceAssistant(use_chroma="--no-chroma" not in sys.argv)
+    # The packaged build leaves ChromaDB out (it is large and slow to start); the assistant then uses keyword retrieval.
+    assistant = SpaceAssistant(use_chroma=not config.FROZEN and "--no-chroma" not in sys.argv)
     Game(db, assistant)
     app.run()
 

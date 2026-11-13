@@ -13,3 +13,7 @@ data/chroma/
 data/donki_cache.json
 data/osdr_cache.json
 data/.*.tmp
+
+# Packaged build output
+build/
+dist/
