@@ -1,0 +1,15 @@
+# Versions below are the ones this project was developed and tested against.
+ursina>=8.3,<9
+python-dotenv>=1.0
+arabic-reshaper>=3.0     # Arabic letter joining (required for the Arabic interface)
+python-bidi>=0.6         # right-to-left text ordering (required for the Arabic interface)
+google-genai>=1.0        # Gemini LLM for the AI Space Assistant
+pytest>=8.0
+fonttools>=4.40        # used by tests/test_bilingual.py (font glyph coverage check)
+requests>=2.31         # runtime: NASA DONKI / OSDR data for Outpost Command
+
+# Optional but recommended (the game runs without them, with keyword retrieval / offline answers):
+chromadb>=1.0          # vector search for the AI Space Assistant
+
+# Only needed to regenerate the art / audio / fonts (the generated files are already included):
+# numpy, scipy, pillow

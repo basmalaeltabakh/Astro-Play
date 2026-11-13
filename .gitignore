@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.db
+data/chroma/
+*.log
+.DS_Store
+
+# Outpost Command: cached NASA DONKI summary
+data/donki_cache.json
+data/osdr_cache.json
+data/.*.tmp
