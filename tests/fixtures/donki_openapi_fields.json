@@ -1,0 +1,123 @@
+{
+ "_about": "Field names copied from the official DONKI OpenAPI document (version 2.0).",
+ "_source": "https://ccmc.gsfc.nasa.gov/DONKI/api/openapi/",
+ "_retrieved": "2026-11-09",
+ "servers": [
+  "https://ccmc.gsfc.nasa.gov/DONKI-API"
+ ],
+ "securitySchemes": null,
+ "globalSecurity": null,
+ "maxWindow": "60-day (from every path description)",
+ "paths": {
+  "FLR": {
+   "params": [
+    "startDate",
+    "endDate",
+    "catalog",
+    "class",
+    "version"
+   ],
+   "required": [],
+   "item": "FLRObject"
+  },
+  "CME": {
+   "params": [
+    "startDate",
+    "endDate",
+    "mostAccurateOnly",
+    "completeEntryOnly",
+    "speed",
+    "halfAngle",
+    "catalog",
+    "keyword",
+    "feature",
+    "version"
+   ],
+   "required": [
+    "startDate",
+    "endDate"
+   ],
+   "item": "CMEJSON"
+  },
+  "GST": {
+   "params": [
+    "startDate",
+    "endDate",
+    "catalog",
+    "version"
+   ],
+   "required": [],
+   "item": "GSTObject"
+  },
+  "SEP": {
+   "params": [
+    "startDate",
+    "endDate",
+    "catalog",
+    "version"
+   ],
+   "required": [],
+   "item": "SEPObject"
+  }
+ },
+ "schemas": {
+  "FLRObject": [
+   "activeRegionNum",
+   "beginTime",
+   "catalog",
+   "classType",
+   "endTime",
+   "flrID",
+   "instruments",
+   "link",
+   "linkedEvents",
+   "note",
+   "peakTime",
+   "sentNotifications",
+   "sourceLocation",
+   "submissionTime",
+   "versionId"
+  ],
+  "CMEJSON": [
+   "activeRegionNum",
+   "activityID",
+   "catalog",
+   "cmeAnalyses",
+   "instruments",
+   "link",
+   "linkedEvents",
+   "note",
+   "sentNotifications",
+   "sourceLocation",
+   "startTime",
+   "submissionTime",
+   "versionId"
+  ],
+  "GSTObject": [
+   "allKpIndex",
+   "gstID",
+   "link",
+   "linkedEvents",
+   "sentNotifications",
+   "startTime",
+   "submissionTime",
+   "versionId"
+  ],
+  "SEPObject": [
+   "eventTime",
+   "instruments",
+   "link",
+   "linkedEvents",
+   "sentNotifications",
+   "sepID",
+   "submissionTime",
+   "versionId"
+  ],
+  "KpIndexObject": [
+   "kpIndex",
+   "observedTime",
+   "source"
+  ]
+ },
+ "dateFormat": "Start date (yyyy-MM-dd). Defaults to 30 days ago."
+}

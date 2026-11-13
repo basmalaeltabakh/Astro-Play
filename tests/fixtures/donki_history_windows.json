@@ -1,0 +1,343 @@
+{
+ "_about": "REAL per-window event counts from the official DONKI API: 24 non-overlapping 30-day windows, counted with nasa_data.summarize(). Used only to regression-test the solar-activity calibration; the app never reads it.",
+ "_source": "https://ccmc.gsfc.nasa.gov/DONKI-API/get/{FLR,CME,GST,SEP}",
+ "_recorded": "2026-11-09",
+ "windows": [
+  {
+   "start": "2024-11-20",
+   "end": "2024-12-19",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 41,
+    "flare_c": 8,
+    "flare_minor": 0,
+    "cme": 149,
+    "gst": 0,
+    "gst_strong": 0,
+    "sep": 12
+   }
+  },
+  {
+   "start": "2024-12-20",
+   "end": "2025-01-18",
+   "counts": {
+    "flare_x": 6,
+    "flare_m": 97,
+    "flare_c": 9,
+    "flare_minor": 0,
+    "cme": 145,
+    "gst": 1,
+    "gst_strong": 1,
+    "sep": 7
+   }
+  },
+  {
+   "start": "2025-01-19",
+   "end": "2025-02-17",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 51,
+    "flare_c": 8,
+    "flare_minor": 0,
+    "cme": 132,
+    "gst": 0,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2025-02-18",
+   "end": "2025-03-19",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 18,
+    "flare_c": 11,
+    "flare_minor": 0,
+    "cme": 127,
+    "gst": 3,
+    "gst_strong": 0,
+    "sep": 7
+   }
+  },
+  {
+   "start": "2025-03-20",
+   "end": "2025-04-18",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 45,
+    "flare_c": 8,
+    "flare_minor": 0,
+    "cme": 114,
+    "gst": 4,
+    "gst_strong": 1,
+    "sep": 5
+   }
+  },
+  {
+   "start": "2025-04-19",
+   "end": "2025-05-18",
+   "counts": {
+    "flare_x": 2,
+    "flare_m": 13,
+    "flare_c": 4,
+    "flare_minor": 0,
+    "cme": 138,
+    "gst": 1,
+    "gst_strong": 0,
+    "sep": 1
+   }
+  },
+  {
+   "start": "2025-05-19",
+   "end": "2025-06-17",
+   "counts": {
+    "flare_x": 2,
+    "flare_m": 31,
+    "flare_c": 11,
+    "flare_minor": 0,
+    "cme": 132,
+    "gst": 3,
+    "gst_strong": 1,
+    "sep": 6
+   }
+  },
+  {
+   "start": "2025-06-18",
+   "end": "2025-07-17",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 7,
+    "flare_c": 3,
+    "flare_minor": 0,
+    "cme": 133,
+    "gst": 0,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2025-07-18",
+   "end": "2025-08-16",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 22,
+    "flare_c": 9,
+    "flare_minor": 0,
+    "cme": 111,
+    "gst": 1,
+    "gst_strong": 0,
+    "sep": 2
+   }
+  },
+  {
+   "start": "2025-08-17",
+   "end": "2025-09-15",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 23,
+    "flare_c": 8,
+    "flare_minor": 0,
+    "cme": 149,
+    "gst": 3,
+    "gst_strong": 0,
+    "sep": 9
+   }
+  },
+  {
+   "start": "2025-09-16",
+   "end": "2025-10-15",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 34,
+    "flare_c": 8,
+    "flare_minor": 0,
+    "cme": 133,
+    "gst": 1,
+    "gst_strong": 1,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2025-10-16",
+   "end": "2025-11-14",
+   "counts": {
+    "flare_x": 6,
+    "flare_m": 35,
+    "flare_c": 7,
+    "flare_minor": 0,
+    "cme": 188,
+    "gst": 5,
+    "gst_strong": 2,
+    "sep": 22
+   }
+  },
+  {
+   "start": "2025-11-15",
+   "end": "2025-12-14",
+   "counts": {
+    "flare_x": 2,
+    "flare_m": 30,
+    "flare_c": 10,
+    "flare_minor": 0,
+    "cme": 173,
+    "gst": 2,
+    "gst_strong": 0,
+    "sep": 2
+   }
+  },
+  {
+   "start": "2025-12-15",
+   "end": "2026-01-13",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 10,
+    "flare_c": 13,
+    "flare_minor": 0,
+    "cme": 120,
+    "gst": 1,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-01-14",
+   "end": "2026-02-12",
+   "counts": {
+    "flare_x": 7,
+    "flare_m": 87,
+    "flare_c": 13,
+    "flare_minor": 0,
+    "cme": 153,
+    "gst": 1,
+    "gst_strong": 1,
+    "sep": 9
+   }
+  },
+  {
+   "start": "2026-02-13",
+   "end": "2026-03-14",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 4,
+    "flare_c": 10,
+    "flare_minor": 0,
+    "cme": 136,
+    "gst": 2,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-03-15",
+   "end": "2026-04-13",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 14,
+    "flare_c": 10,
+    "flare_minor": 0,
+    "cme": 141,
+    "gst": 4,
+    "gst_strong": 1,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-04-14",
+   "end": "2026-05-13",
+   "counts": {
+    "flare_x": 2,
+    "flare_m": 23,
+    "flare_c": 3,
+    "flare_minor": 0,
+    "cme": 123,
+    "gst": 2,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-05-14",
+   "end": "2026-06-12",
+   "counts": {
+    "flare_x": 1,
+    "flare_m": 12,
+    "flare_c": 10,
+    "flare_minor": 1,
+    "cme": 179,
+    "gst": 2,
+    "gst_strong": 0,
+    "sep": 9
+   }
+  },
+  {
+   "start": "2026-06-13",
+   "end": "2026-07-12",
+   "counts": {
+    "flare_x": 2,
+    "flare_m": 63,
+    "flare_c": 6,
+    "flare_minor": 0,
+    "cme": 176,
+    "gst": 1,
+    "gst_strong": 1,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-07-13",
+   "end": "2026-08-11",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 8,
+    "flare_c": 5,
+    "flare_minor": 0,
+    "cme": 115,
+    "gst": 2,
+    "gst_strong": 0,
+    "sep": 6
+   }
+  },
+  {
+   "start": "2026-08-12",
+   "end": "2026-09-10",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 15,
+    "flare_c": 16,
+    "flare_minor": 0,
+    "cme": 140,
+    "gst": 0,
+    "gst_strong": 0,
+    "sep": 11
+   }
+  },
+  {
+   "start": "2026-09-11",
+   "end": "2026-10-10",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 7,
+    "flare_c": 3,
+    "flare_minor": 2,
+    "cme": 94,
+    "gst": 2,
+    "gst_strong": 1,
+    "sep": 0
+   }
+  },
+  {
+   "start": "2026-10-11",
+   "end": "2026-11-09",
+   "counts": {
+    "flare_x": 0,
+    "flare_m": 9,
+    "flare_c": 3,
+    "flare_minor": 0,
+    "cme": 83,
+    "gst": 1,
+    "gst_strong": 0,
+    "sep": 0
+   }
+  }
+ ]
+}
