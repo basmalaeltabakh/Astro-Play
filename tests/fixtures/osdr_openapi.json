@@ -1,0 +1,24 @@
+{
+ "_about": "Server, version, authentication and paths copied from the official OSDR Biological Data API OpenAPI document.",
+ "_source": "https://visualization.osdr.nasa.gov/biodata/api/",
+ "_retrieved": "2026-11-09",
+ "version": "2.0.0",
+ "servers": [
+  "https://visualization.osdr.nasa.gov/biodata/api"
+ ],
+ "security": null,
+ "securitySchemes": null,
+ "paths": [
+  "/v2/dataset/{accessionId}/",
+  "/v2/dataset/{accessionId}/assay/{assayName}/",
+  "/v2/dataset/{accessionId}/assay/{assayName}/sample/{sampleName}/",
+  "/v2/dataset/{accessionId}/assay/{assayName}/samples/",
+  "/v2/dataset/{accessionId}/assays/",
+  "/v2/dataset/{accessionId}/file/{fileName}/",
+  "/v2/dataset/{accessionId}/files/",
+  "/v2/datasets/",
+  "/v2/query/assays/",
+  "/v2/query/datasets/",
+  "/v2/query/samples/"
+ ]
+}

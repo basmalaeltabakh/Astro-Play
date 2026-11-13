@@ -1,0 +1,567 @@
+{
+ "_about": "REAL responses recorded from the official OSDR Biological Data API (no key). Edits: only the first 25 entries of the dataset list are kept, the query rows are every row of one real query (organism column) for 6 repeated accessions and 8 others, and whole-study responses had the researcher-name, protocol, publication, acknowledgment and funding fields removed to limit size.",
+ "_source": "https://visualization.osdr.nasa.gov/biodata/api/v2/{datasets/,dataset/{accession}/,query/datasets/}",
+ "_recorded": "2026-11-09",
+ "datasets_list": {
+  "OSD-1": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-1/"
+  },
+  "OSD-2": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-2/"
+  },
+  "OSD-3": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-3/"
+  },
+  "OSD-4": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-4/"
+  },
+  "OSD-5": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-5/"
+  },
+  "OSD-6": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-6/"
+  },
+  "OSD-7": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-7/"
+  },
+  "OSD-8": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-8/"
+  },
+  "OSD-9": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-9/"
+  },
+  "OSD-11": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-11/"
+  },
+  "OSD-12": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-12/"
+  },
+  "OSD-13": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-13/"
+  },
+  "OSD-14": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-14/"
+  },
+  "OSD-15": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-15/"
+  },
+  "OSD-16": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-16/"
+  },
+  "OSD-17": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-17/"
+  },
+  "OSD-18": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-18/"
+  },
+  "OSD-19": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-19/"
+  },
+  "OSD-20": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-20/"
+  },
+  "OSD-21": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-21/"
+  },
+  "OSD-22": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-22/"
+  },
+  "OSD-25": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-25/"
+  },
+  "OSD-26": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-26/"
+  },
+  "OSD-27": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-27/"
+  },
+  "OSD-28": {
+   "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-28/"
+  }
+ },
+ "query_rows": [
+  {
+   "id.accession": "OSD-1",
+   "study.characteristics.organism": "Drosophila melanogaster"
+  },
+  {
+   "id.accession": "OSD-2",
+   "study.characteristics.organism": "Homo sapiens"
+  },
+  {
+   "id.accession": "OSD-3",
+   "study.characteristics.organism": "Drosophila melanogaster"
+  },
+  {
+   "id.accession": "OSD-4",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-5",
+   "study.characteristics.organism": "Homo sapiens"
+  },
+  {
+   "id.accession": "OSD-6",
+   "study.characteristics.organism": "Rattus norvegicus"
+  },
+  {
+   "id.accession": "OSD-7",
+   "study.characteristics.organism": "Arabidopsis thaliana"
+  },
+  {
+   "id.accession": "OSD-8",
+   "study.characteristics.organism": "Arabidopsis thaliana"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Enterobacter"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Klebsiella"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Staphylococcus aureus"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Pantoea conspicua"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Acinetobacter pittii"
+  },
+  {
+   "id.accession": "OSD-67",
+   "study.characteristics.organism": "Staphylococcus"
+  },
+  {
+   "id.accession": "OSD-84",
+   "study.characteristics.organism": "Escherichia coli"
+  },
+  {
+   "id.accession": "OSD-84",
+   "study.characteristics.organism": "Enterobacteria phage lambda"
+  },
+  {
+   "id.accession": "OSD-84",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-98",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-98",
+   "study.characteristics.organism": "Not Applicable"
+  },
+  {
+   "id.accession": "OSD-102",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-102",
+   "study.characteristics.organism": "Not Applicable"
+  },
+  {
+   "id.accession": "OSD-103",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-103",
+   "study.characteristics.organism": "Not Applicable"
+  },
+  {
+   "id.accession": "OSD-105",
+   "study.characteristics.organism": "Mus musculus"
+  },
+  {
+   "id.accession": "OSD-105",
+   "study.characteristics.organism": "Not Applicable"
+  }
+ ],
+ "datasets": {
+  "OSD-655": {
+   "OSD-655": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-655/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-655/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-655/files/"
+    },
+    "metadata": {
+     "authoritative source url": "OSD-655/",
+     "flight program": "International Space Station (ISS)",
+     "mission": {
+      "end date": [
+       "01/14/2019",
+       "08/27/2019"
+      ],
+      "start date": [
+       "12/05/2018",
+       "07/25/2019"
+      ],
+      "name": [
+       "SpaceX-16",
+       "SpaceX-18"
+      ]
+     },
+     "material type": "",
+     "project identifier": "VEG-04A, VEG-04B",
+     "accession": "OSD-655",
+     "identifiers": "LSDS-63",
+     "study identifier": "OSD-655",
+     "study assay technology type": [
+      "Inductively Coupled Plasma Optical Emission Spectroscopy",
+      "Oxygen Radical Absorbance Capacity",
+      "Phenolic Compound Content"
+     ],
+     "study assay technology platform": [
+      "icap_7000_series",
+      "biotek_synergy_hybrid",
+      "biotek_synergy_hybrid"
+     ],
+     "space program": "NASA",
+     "study title": "Pick-and-eat space crop production flight testing on the International Space Station (Elemental Analysis, ORAC, Phenolic Content)",
+     "study factor type": [
+      "light color",
+      "Payload",
+      "harvest",
+      "Space Flight",
+      "treatment"
+     ],
+     "study public release date": 1766361600,
+     "parameter value": "",
+     "thumbnail": "/geode-py/ws/studies/OSD-655/image",
+     "study factor name": [
+      "Light Color",
+      "Payload",
+      "Harvest",
+      "Spaceflight",
+      "Treatment"
+     ],
+     "study assay measurement type": [
+      "Spectrochemical Analysis",
+      "Chemical Methods",
+      "Chemical Methods"
+     ],
+     "project type": "Spaceflight Study",
+     "factor value": "",
+     "data source accession": "",
+     "project title": "VEG-04",
+     "experiment platform": "VEGGIE",
+     "characteristics": "",
+     "project link": "https://nlsp.nasa.gov/view/lsdapub/lsda_experiment/b3705553-95ad-5b02-8577-c0af08e800f2",
+     "managing nasa center": "Kennedy Space Center (KSC)",
+     "study description": "Fresh, nutritious, palatable produce for crew consumption on long-duration spaceflight missions may provide health-promoting, bioavailable nutrients and enhance the dietary experience. VEG-04A and VEG-04B explored growing leafy greens on the International Space Station using the Veggie Vegetable Production System. Two flight tests with ground controls were conducted in 2019 growing mizuna mustard, where Veggie chambers were set to different red-to-blue-to-green light formulations. Light quality affects plant growth, nutrition, microbiology, and organoleptic characteristics on Earth, and we examined how these vary in microgravity and under different harvest scenarios. Astronauts harvested and weighed mizuna and completed organoleptic evaluations. Flight samples were returned to Earth for nutritional quality and microbial food safety analyses. Yield and chemistry differed between ground and flight samples and light treatments, and bacterial and fungal counts were lower in ground than in flight samples. This research helps increase our understanding of the requirements for growing high-quality crops in spaceflight. This study derives results from the Phenolic Content, Elemental Analysis, and ORAC assays using leaf samples.",
+     "organism": "Brassica rapa",
+     "data source type": "alsda",
+     "esa acronym": ""
+    }
+   }
+  },
+  "OSD-670": {
+   "OSD-670": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-670/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-670/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-670/files/"
+    },
+    "metadata": {
+     "space program": "NASA",
+     "flight program": "",
+     "study assay measurement type": "Image Analysis",
+     "material type": "Plants",
+     "study identifier": "OSD-670",
+     "esa acronym": "",
+     "managing nasa center": "",
+     "data source type": "alsda",
+     "mission": {
+      "start date": "",
+      "end date": "",
+      "name": ""
+     },
+     "experiment platform": "Clinostat",
+     "study factor name": "Substrate Type",
+     "study assay technology platform": "camera",
+     "authoritative source url": "OSD-670/",
+     "project identifier": "Simulated_Microgravity, Simulated_Environmental_Factors",
+     "thumbnail": "/geode-py/ws/studies/OSD-670/image",
+     "project title": "",
+     "study public release date": 1716249600,
+     "project link": "",
+     "organism": [
+      "Raphanus sativus",
+      "Lactuca sativa",
+      "Capsicum annuum"
+     ],
+     "accession": "OSD-670",
+     "study assay technology type": "Photography",
+     "study title": "CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
+     "project type": "Ground Study",
+     "study factor type": "substrate",
+     "factor value": "",
+     "study description": "Human expansion into the solar system is currently at the forefront of space research. For our astronauts to survive, they will need to be fed a healthy and nutritious diet on a consistent basis. Right now, our current method of feeding astronauts consists of resupplied prepackaged food from Earth, which is unsustainable for long-term missions. Using planetary resources via in situ resource utilization to grow crops is the next step toward sustainability in space. Asteroids are an abundant space resource and should not be overlooked when considering crewed missions. In particular, the primordial CI carbonaceous asteroids are of interest because the regolith is suggested to contain soluble elemental nutrients, such as phosphorous and potassium, that crops can use for growth and development. We present a study on the ability of CI carbonaceous asteroid regolith simulant to sustain plant growth of lettuce (Latuca sativa), radishes (Raphanus sativus), and peppers (Capsicum annuum). We tested growing the selected crops in increasing mixtures of simulant and peat moss. The results showed that each species reacted differently to each treatment and that the radishes were more affected by the treatments. Subsequent analysis showed that the simulant contains small amounts of plant-usable nutrients, despite its high pH, low cation exchange capacity, and classification as a silt-based soil. Our results indicate that the simulant is prone to compaction and crusting, leading to drought stress on the crops. Further investigations are needed to determine mitigation strategies to make CI asteroid regolith a more conducive soil. This data set derives results from the Image Analysis Photography assay with leaf area measurements. Additional data provided in the sample table includes plant height and biomass measurements as well as a thorough analysis of the substrate including pH, elemental analysis, and soil texture analysis.",
+     "characteristics": "",
+     "parameter value": "",
+     "identifiers": "LSDS-73",
+     "data source accession": ""
+    }
+   }
+  },
+  "OSD-46": {
+   "OSD-46": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-46/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-46/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-46/files/"
+    },
+    "metadata": {
+     "space program": "NASA",
+     "flight program": "",
+     "study assay measurement type": "transcription profiling",
+     "material type": "",
+     "study identifier": "OSD-46",
+     "esa acronym": "",
+     "managing nasa center": "Ames Research Center (ARC)",
+     "data source type": "cgene",
+     "mission": {
+      "start date": "",
+      "end date": "",
+      "name": ""
+     },
+     "experiment platform": "",
+     "study factor name": [
+      "Ionizing Radiation",
+      "Exposure Duration",
+      "Time of Sample Collection After Treatment",
+      "Genotype",
+      "Age",
+      "Absorbed Radiation Dose"
+     ],
+     "study assay technology platform": "Affymetrix",
+     "authoritative source url": "OSD-46/",
+     "project identifier": "Heavy_Ion_HZE_Irradiation, High_LET_Irradiation, Low_LET_Irradiation, Gamma_Irradiation, High_Dose_Irradiation, Multiple_Radiation_Types",
+     "thumbnail": "/geode-py/ws/studies/OSD-46/image",
+     "project title": "Arabidopsis as a Model for the Study of DNA Double Strand Break (DSB) Repair and DSB Induction by Space Radiation",
+     "study public release date": 1410998400,
+     "project link": "https://lsda.jsc.nasa.gov/scripts/experiment/exper.aspx?exp_index=2068",
+     "organism": "Arabidopsis thaliana",
+     "accession": "OSD-46",
+     "study assay technology type": "DNA microarray",
+     "study title": "Gamma radiation and HZE treatment of seedlings in Arabidopsis",
+     "project type": "Ground Study",
+     "study factor type": [
+      "ionizing radiation",
+      "Exposure Duration",
+      "Time of Sample Collection After Treatment",
+      "Genotype",
+      "age",
+      "absorbed radiation dose"
+     ],
+     "factor value": "",
+     "study description": "Plants exhibit a robust transcriptional response to gamma radiation which includes the induction of transcripts required for homologous recombination and the suppression of transcripts that promote cell cycle progression. Various DNA damaging agents induce different spectra of DNA damage as well as collateral damage to other cellular components and therefore are not expected to provoke identical responses by the cell. Here we study the effects of two different types of ionizing radiation (IR) treatment, HZE (1 GeV Fe26+ high mass, high charge, and high energy relativistic particles) and gamma photons, on the transcriptome of Arabidopsis thaliana seedlings. Both types of IR induce small clusters of radicals that can result in the formation of double strand breaks (DSBs), but HZE also produces linear arrays of extremely clustered damage. We performed these experiments across a range of time points (1.5-24 h after irradiation) in both wild-type plants and in mutants defective in the DSB-sensing protein kinase ATM. The two types of IR exhibit a shared double strand break-repair-related damage response, although they differ slightly in the timing, degree, and ATM-dependence of the response. The ATM-dependent, DNA metabolism-related transcripts of the DSB response were also induced by other DNA damaging agents, but were not induced by conventional stresses. Both Gamma and HZE irradiation induced, at 24 h post-irradiation, ATM-dependent transcripts associated with a variety of conventional stresses; these were overrepresented for pathogen response, rather than DNA metabolism. In contrast, only HZE-irradiated plants, at 1.5 h after irradiation, exhibited an additional and very extensive transcriptional response, shared with plants experiencing extended night. This response was not apparent in gamma-irradiated plants. We treated 5-day-old WT and atm-1 seedlings of Arabidopsis thaliana with 100 Gy of Gamma radiation (over a span of 15 minutes) or 30 Gy of HZE (over a span of approximately 12 minutes). Gamma irradiations were completed at 8:40 am, while HZE irradiations were conducted in two runs (due to space limitations) which were completed at 1:09 and 1:28pm respectively. Gamma treated seedlings were sampled at 10:10 am, 11:40 am, 2:55 pm, 8:40 pm, and 8:40 am. HZE treated seedlings were sampled at 2:39 pm, 4:09 pm, 7:24 pm, 1:09 am, and 1:09 pm. Un-irradiated WT and atm-1 control seedlings were sampled at 10:45 am on Day #1 and 9:15 am on Day #2. There are a total of 22 experimental or control conditions, with two replicates per condition, yielding 44 samples overall.",
+     "characteristics": "",
+     "parameter value": "",
+     "identifiers": "GLDS-46",
+     "data source accession": "E-GEOD-61484"
+    }
+   }
+  },
+  "OSD-48": {
+   "OSD-48": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-48/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-48/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-48/files/"
+    },
+    "metadata": {
+     "authoritative source url": "OSD-48/",
+     "flight program": "",
+     "mission": {
+      "end date": "10/25/2014",
+      "start date": "9/21/14",
+      "name": "SpaceX-4"
+     },
+     "material type": "Liver",
+     "project identifier": "RR-1",
+     "accession": "OSD-48",
+     "identifiers": [
+      "GLDS-48",
+      "LSDS-2"
+     ],
+     "study identifier": "OSD-48",
+     "study assay technology type": [
+      "RNA Sequencing (RNA-Seq)",
+      "mass spectrometry",
+      "Microscopy",
+      "Whole Genome Bisulfite Sequencing",
+      "Whole Transcriptome Bisulfite Sequencing"
+     ],
+     "study assay technology platform": [
+      "Illumina",
+      "Orbitrap Fusion(Thermo Scientific)",
+      "pannoramic scan (3d histech)",
+      "Illumina",
+      "Illumina"
+     ],
+     "space program": "NASA",
+     "study title": "Rodent Research-1 (RR1) NASA Validation Flight: Mouse liver transcriptomic, proteomic, epigenomic and histology data",
+     "study factor type": [
+      "Space Flight",
+      "dissection"
+     ],
+     "study public release date": 1450137600,
+     "parameter value": "",
+     "thumbnail": "/geode-py/ws/studies/OSD-48/image",
+     "study factor name": [
+      "Spaceflight",
+      "Dissection Condition"
+     ],
+     "study assay measurement type": [
+      "transcription profiling",
+      "protein expression profiling",
+      "Molecular Cellular Imaging",
+      "DNA methylation profiling",
+      "RNA methylation profiling"
+     ],
+     "project type": "Spaceflight Study",
+     "factor value": "",
+     "data source accession": "",
+     "project title": "Rodent Research 1",
+     "experiment platform": "International Space Station (ISS)",
+     "characteristics": "",
+     "project link": "https://nlsp.nasa.gov/view/lsdapub/lsda_experiment/7633383e-fe88-5ada-92dd-cd31a50fda32",
+     "managing nasa center": "Ames Research Center (ARC)",
+     "study description": "Translating fundamental biological discoveries from NASA Space Biology program into health risk from space flights has been an ongoing challenge. We propose to use NASA GeneLab database to gain new knowledge on potential systemic responses to space. Unbiased systems biology analysis of transcriptomic data from seven different rodent datasets reveals for the first time the existence of potential 'master regulators' coordinating a systemic response to microgravity and/or space radiation with TGF-β1 being the most common regulator. We hypothesized the space environment leads to the release of biomolecules circulating inside the blood stream. Through datamining we identified 13 candidate microRNAs (miRNA) which are common in all studies and directly interact with TGF-β1 that can be potential circulating factors impacting space biology. This study exemplifies the utility of the GeneLab data repository to aid in the process of performing novel hypothesis-based research.",
+     "organism": "Mus musculus",
+     "data source type": [
+      "alsda",
+      "cgene"
+     ],
+     "esa acronym": ""
+    }
+   }
+  },
+  "OSD-65": {
+   "OSD-65": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-65/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-65/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-65/files/"
+    },
+    "metadata": {
+     "authoritative source url": "OSD-65/",
+     "flight program": "International Space Station (ISS)",
+     "mission": {
+      "end date": [
+       "02/11/2015",
+       "05/21/2015"
+      ],
+      "start date": [
+       "01/10/2015",
+       "04/14/2015"
+      ],
+      "name": [
+       "SpaceX-5",
+       "SpaceX-6"
+      ]
+     },
+     "material type": "Cells",
+     "project identifier": "Microbial Tracking-1A, Microbial Tracking-1B",
+     "accession": "OSD-65",
+     "identifiers": "GLDS-65",
+     "study identifier": "OSD-65",
+     "study assay technology type": [
+      "ITS",
+      "16S"
+     ],
+     "study assay technology platform": [
+      "Illumina",
+      "Illumina"
+     ],
+     "space program": "NASA",
+     "study title": "Microbial Observatory (ISS-MO): Microbial diversity",
+     "study factor type": "Space Flight",
+     "study public release date": 1467849600,
+     "parameter value": "",
+     "thumbnail": "/geode-py/ws/studies/OSD-65/image",
+     "study factor name": "Spaceflight",
+     "study assay measurement type": [
+      "Amplicon Sequencing",
+      "Amplicon Sequencing"
+     ],
+     "project type": "Spaceflight Study",
+     "factor value": "",
+     "data source accession": "",
+     "project title": "ISS-MO",
+     "experiment platform": "International Space Station (ISS)",
+     "characteristics": "",
+     "project link": "https://nlsp.nasa.gov/view/lsdapub/lsda_experiment/c4df82ca-6b22-5b77-9515-722c0ac999c3",
+     "managing nasa center": "Jet Propulsion Laboratory (JPL)",
+     "study description": "The environmental microbiome study was designed to decipher microbial diversity of the International Space Station surfaces in terms of spatial and temporal distributions using 16S and ITS iTag Illumina sequencing. We hypothesized that the microbial population of environmental surfaces changes in time due to astronauts' activity and might be location specific. The environmental samples were collected with the polyester wipes from eight different locations in the ISS during two consecutive sampling sessions (three months apart). The specific objective was to unveil the viable microbial diversity of each location during two separate sessions in terms of abundance and richness of the communities. The International Space Station (ISS) as a closed built environment has its own environmental microbiome which is shaped by microgravity, radiation, and limited human presence. The microbial diversity associated with ISS environmental surfaces was investigated during this study. Polyester wipes and contact slides were used for sampling of eight various surface locations on the ISS at different time periods. The samples were retrieved and analyzed immediately upon the return to the Earth (via Soyuz TMA-14M or Dragon capsule from SpaceX). After surface sample collection, contact slides containing nutrient media for the growth of bacteria and fungi were incubated at 25C. The polyester wipes were processed to measure microbial burden (R2A, Blood Agar, and Potato Dextrose Agar) and recover cultivable bacteria as well as fungi. Subsequently, viable microbial burden was assessed using Adenosine Triphosphate (ATP) assay, and quantitative polymerase chain reaction (PCR) methods after propidium monoazide (PMA) treatment. The 16S-tag and metagenome analyses were used to elucidate viable microbial diversity. The cultivable bacterial population yield from the polyester wipes was very high (5 to 7-logs) when compared with the contact slides (102 to 103 CFU/m2). The PMA-qPCR analysis showed considerable variation of viable bacterial population (105 to 109 16S rDNA gene copies/m2) among locations sampled. Unlike contact slides, polyester wipes cover much larger sample surface (~1 m2) and produce much more reliable results of the microbial diversity of the ISS covering both cultivable and non-cultivable species. The cultivable, total, and viable microbial diversity was determined utilizing state-of-the art molecular techniques. The implementation of the PMA assay before DNA extraction allowed distinguishing viable microorganisms, which is crucial for determining their role to the crew health, the ISS maintenance and the general knowledge of the closed environmentally controlled built systems.",
+     "organism": "Microbiota",
+     "data source type": "cgene",
+     "esa acronym": ""
+    }
+   }
+  },
+  "OSD-299": {
+   "OSD-299": {
+    "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-299/",
+    "assays": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-299/assays/"
+    },
+    "files": {
+     "REST_URL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-299/files/"
+    },
+    "metadata": {
+     "authoritative source url": "OSD-299/",
+     "flight program": "International Space Station (ISS)",
+     "mission": {
+      "end date": "",
+      "start date": "",
+      "name": ""
+     },
+     "material type": "Cells",
+     "project identifier": "",
+     "accession": "OSD-299",
+     "identifiers": "GLDS-299",
+     "study identifier": "OSD-299",
+     "study assay technology type": "Whole-Genome Shotgun Sequencing",
+     "study assay technology platform": "Illumina",
+     "space program": "NASA",
+     "study title": "Sphingomonas Metagenomic assembly",
+     "study factor type": "Space Flight",
+     "study public release date": 1595203200,
+     "parameter value": "",
+     "thumbnail": "/geode-py/ws/studies/OSD-299/image",
+     "study factor name": "Spaceflight",
+     "study assay measurement type": "Metagenomic sequencing",
+     "project type": "",
+     "factor value": "",
+     "data source accession": "JABYQV000000000",
+     "project title": "",
+     "experiment platform": "International Space Station (ISS)",
+     "characteristics": "",
+     "project link": "",
+     "managing nasa center": "",
+     "study description": "Metagenome Assembled Genome (MAG) of Sphingomonas sanguinis from the International Space Station metagenome",
+     "organism": "Sphingomonas sanguinis",
+     "data source type": "cgene",
+     "esa acronym": ""
+    }
+   }
+  }
+ }
+}
