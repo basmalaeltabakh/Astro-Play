@@ -38,27 +38,67 @@ decisions in the player's hands:
 
 ## 🛰️ Built for this challenge: Outpost Command
 
-> **Status: in development for the hackathon (13–14 Nov 2026).** The items below are our plan, not shipped features.
+A mode where the player **runs a lunar or Martian outpost** over a series of sols (Martian days). Open it from the main
+menu: **Outpost Command**.
 
-A new mode where the player **runs a lunar or Martian outpost** over a series of sols:
+- **Three core resources:** **Power**, **Life Support** (with oxygen and food shown separately) and **Radiation
+  Shielding**. Each sol the player splits the available power between Life Support, Shielding, **Communications** and
+  **Science**. Communications and Science are things you spend power *on*, not extra resources. Crew health and score are
+  shown as status indicators, not resources.
+- **Real trade-offs:** reinforce shielding before a solar storm and have less power for science. Keep the radio on to get
+  a forecast (and to use supply windows) and give up score for it. Put science first and risk the crew on Hard.
+- **Forecasts:** with enough power on Communications you see the *category* of the next event (3 units) or the exact
+  event (5 units). With no forecast the player has to plan for the unknown.
+- **Events:** ten varied events (solar storm, micrometeorite, dust storm, dust build-up, equipment fault, crop blight,
+  radio blackout, plus helpful ones: comms window, supply cache, science discovery). Events are fair by design: quiet
+  opening sols, no long hazard streaks, and a gap between severe storms.
+- **Real NASA data behind the risk:** how likely solar storms are follows recent space weather from **DONKI**, so a
+  shielding decision connects to real events. The number is a *game mapping* of recent event counts, **not** a NASA
+  measurement or forecast.
+- **Real research as fact cards:** 13 **OSDR** study cards (plants, radiation, microgravity, health, microbes) with NASA's
+  own title and description, kept apart from a short, clearly labeled gameplay note written by our team.
+- **Honest data:** every NASA source is labeled in-game as *Live*, *Cached*, *Archived* (with its date) or built-in
+  default. Saved data is never presented as live.
+- **Replayable and saved:** a run is saved after every sol, so you can leave and **resume** exactly where you stopped.
+  Events differ between runs (each run has a seed, shown on the result screen). Finish with a result screen (stars, score,
+  and a plain explanation of why a mission failed), then **Play again**.
+- **Bilingual:** the whole mode works in English and Arabic (mirrored layout).
 
-- **Three core resources:** power, life support (oxygen and food) and radiation shielding, plus communication delay as
-  an event. Few systems, so young players can follow them, but with real consequences.
-- **Real trade-offs:** reinforce shielding before a solar event and lose tonight's power. Spend oxygen reserves on an
-  extra research opportunity and live with the margin.
-- **Real NASA data behind the risk:** radiation-event likelihood follows recent solar activity from **DONKI**, so a
-  shielding decision connects to real space weather.
-- **Real research as fact cards:** short findings from **OSDR** on astronaut health and biology.
-- **Honest data:** every source is labeled in-game. Archived data is marked as archived and never presented as live.
-- **Replayable:** events vary between playthroughs, so kids can try new strategies and learn from failure.
-- **Same AI assistant:** explains terms like *radiation dose* and *sol* in plain language, in Arabic or English.
+### Locations and difficulties
+| | Sols | Events | Notes |
+|---|---|---|---|
+| **Easy** | 8 | fewer and gentler, quiet opening sols | forgiving first mission |
+| **Normal** | 10 | more frequent, harder-hitting | the default for most players |
+| **Hard** | 12 | most frequent, starts with little power | the radio and careful planning matter |
+
+The starting difficulty follows the player's skill level (Easy, Normal or Hard) and can be changed on the setup screen.
+**Moon**: more solar power and few dust storms, but more micrometeorites. **Mars**: less power and more dust storms, so it
+is the harder place to run an outpost. All balance numbers live in `astro/outpost_config.py` and are game-design choices,
+not NASA figures.
+
+### Outpost Command controls
+Mostly mouse: click the buttons on screen (**+ / −** to move power, **Advance to next sol**, **Reset**, **Research cards**).
+
+| Key | Action |
+|---|---|
+| Enter / Space | Advance to the next sol |
+| R | Reset this sol's power plan |
+| Shift + click on + / − | Change power by 5 instead of 1 |
+| ← / → (or A / D) | Previous / next research card |
+| Esc | Back (to setup, or out of Outpost Command; a run in progress stays saved) |
+
+The AI Space Assistant (Q) belongs to the 3D missions. It is not part of Outpost Command.
 
 ## 📡 NASA data and sources
 | Source | Use in Astro Play |
 |---|---|
-| [DONKI](https://api.nasa.gov/) (Space Weather Database) | Solar activity that drives radiation risk in Outpost Command *(planned)* |
-| [OSDR](https://osdr.nasa.gov/) (Open Science Data Repository) | Astronaut health and biology findings as fact cards *(planned)* |
+| [DONKI](https://ccmc.gsfc.nasa.gov/DONKI/) (Space Weather Database) | Counts of recent solar flares, CMEs, geomagnetic storms and particle events set how likely solar storms are in Outpost Command |
+| [OSDR](https://osdr.nasa.gov/) (Open Science Data Repository) | Study titles and descriptions for the research cards in Outpost Command |
 | NASA Moon, Mars, Europa and ISS pages | Knowledge base for the AI assistant (listed in `data/knowledge_sources.txt`, loaded with `scripts/ingest_nasa.py`) |
+
+Both DONKI and OSDR are official NASA APIs that need **no API key**. The game works fully **offline**: it ships with a
+saved DONKI snapshot and 13 curated OSDR studies, and says clearly when it is showing saved data. See
+**[DATA_SOURCES.md](DATA_SOURCES.md)** for endpoints, attribution, limits and how the bundled data works.
 
 The built-in offline notes are short educational summaries written in our own words about topics covered by NASA
 resources. Always verify facts against the original NASA pages.
@@ -70,16 +110,49 @@ resources. Always verify facts against the original NASA pages.
 | Game engine / 3D | [Ursina Engine](https://www.ursinaengine.org/) (built on Panda3D) |
 | AI assistant | Google Gemini (`google-genai`) with retrieval-augmented generation |
 | Knowledge base | NASA content indexed in ChromaDB (vector search), with built-in keyword search as fallback |
-| Database | SQLite: profiles, progress, XP, stars, achievements |
+| NASA data | `requests` against the official DONKI and OSDR APIs, loaded in background threads, with local cache, bundled snapshot and offline fallback |
+| Database | SQLite: profiles, progress, XP, stars, achievements, Outpost Command runs (saved/resumable) |
 | Arabic support | `arabic-reshaper` + `python-bidi`, bundled Cairo font |
 | Art and audio | Procedurally generated with NumPy, SciPy and Pillow |
 | Configuration | `python-dotenv` |
-| Testing | pytest, plus an automated smoke test that plays the game in both languages |
+| Testing | pytest (simulation, balance, NASA data with mocked network, real-window UI tests), plus smoke tests that play the game in both languages |
 
-
+## ▶️ Run it
+```bash
+python -m venv .venv
+.venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+copy .env.example .env            # macOS/Linux: cp .env.example .env
+python main.py
+```
 Add a free [Gemini API key](https://aistudio.google.com/apikey) as `GEMINI_API_KEY` in `.env` to turn on the live AI
 assistant. Without it, the assistant answers from its built-in notes. Currently a desktop game; a browser version is a
 possible next step.
+
+**Requirements:** Python 3.10 or newer (developed and tested on Python 3.13 on Windows) and a computer with a display and
+OpenGL graphics. The first start needs no internet. The NASA data for Outpost Command needs **no API key**; the
+`NASA_API_KEY` line in `.env.example` is not used by the game.
+
+### Offline mode
+Everything works with no internet:
+- **Outpost Command** starts from saved data right away (a bundled DONKI snapshot and 13 bundled OSDR studies). In the
+  background it asks NASA for newer data; if that fails, the screen says so and the saved data is used and labeled
+  *Archived / Offline*, never *Live*.
+- **The AI assistant** answers from its built-in notes (set no `GEMINI_API_KEY`, or lose the connection).
+
+Optional settings (environment variables, all have defaults): `ASTRO_DONKI_URL`, `ASTRO_OSDR_URL`, `ASTRO_DONKI_CACHE`,
+`ASTRO_OSDR_CACHE`, `ASTRO_DB_PATH`.
+
+### Run the tests
+```bash
+python -m pytest                       # everything (~35 minutes: the UI tests open a real game window)
+python -m pytest tests/test_outpost.py tests/test_outpost_events.py tests/test_outpost_balance.py \
+    tests/test_outpost_flow.py tests/test_outpost_safety.py tests/test_nasa_data.py tests/test_osdr_data.py \
+    tests/test_netguard.py tests/test_core.py                    # fast, no window (under a minute)
+python scripts/smoke_outpost.py        # plays Outpost Command in the real game, English and Arabic, offline
+python scripts/smoke_outpost.py --live # same, using the real NASA services
+```
+The test suite never touches the real internet unless you opt in (`ASTRO_LIVE_TESTS=1` with the `live_network` marker).
 
 ### Controls
 | Key | Action |
@@ -93,7 +166,25 @@ possible next step.
 | M | Music on/off |
 | Esc | Close panel / leave mission |
 
-
+## 📁 Project structure
+```
+main.py            entry point
+astro/             missions, assistant (RAG), knowledge, quiz, database, i18n, audio
+astro/outpost.py         Outpost Command simulation (pure Python, no UI, no network)
+astro/outpost_config.py  every Outpost balance number in one place
+astro/outpost_flow.py    sessions, saving/resuming, background loading of NASA data
+astro/nasa_data.py       DONKI client, cache and bundled snapshot
+astro/osdr_data.py       OSDR client, cache, bundled studies and research cards
+astro/game/        screens, HUD, UI widgets, 3D worlds, habitat
+astro/game/outpost_ui.py Outpost Command screens (setup, play, result, research cards)
+assets/            fonts, audio, sky and UI art
+scripts/           asset generators, NASA ingestion (ingest_nasa.py), smoke tests,
+                   fetch_donki_archive.py / build_osdr_dataset.py (refresh the bundled NASA data)
+tests/             pytest suite (tests/netguard.py blocks real HTTP in tests)
+data/              knowledge sources, settings, donki_archive.json, osdr_studies.json
+DATA_SOURCES.md    NASA sources, endpoints, attribution and limits
+docs/              demo script and submission summary
+```
 
 ## 👩‍🚀 Team
 **Merhan Medhat** · **Basmala Saeed** · **Tahany Emad** · **Aml Ashraf** · **Rawan Hany** · **Alaa Elsayed**
