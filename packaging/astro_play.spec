@@ -50,6 +50,13 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
+# Linux: never ship the build machine's C++ runtime. The player's graphics driver (Mesa) needs the system's own,
+# newer libstdc++; an older bundled copy makes the driver fail to load ("No GLX context: cannot open window").
+if sys.platform.startswith("linux"):
+    _system_only = ("libstdc++.so", "libgcc_s.so")
+    a.binaries = [b for b in a.binaries if not Path(b[0]).name.startswith(_system_only)]
+
 pyz = PYZ(a.pure)
 
 icon = ROOT / "packaging" / "icon.ico"
