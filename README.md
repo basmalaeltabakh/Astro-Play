@@ -9,6 +9,15 @@ become astronauts, explore the Moon, Mars, an orbital lab and Europa, and make t
 planners face: *power or shielding? oxygen or one more experiment?*
 
 > **NASA data → Mission → Player explores and analyzes → AI explains → Player decides → Sees the consequence**
+>
+> 1. Project Repository (GitHub)
+https://github.com/basmalaeltabakh/Astro-Play
+2. Download Astro Play – Windows
+https://github.com/basmalaeltabakh/Astro-Play/releases/download/v1.0.1/AstroPlay-Windows.zip
+3. Download Astro Play – Linux
+https://github.com/basmalaeltabakh/Astro-Play/releases/download/v1.0.1/AstroPlay-Linux.tar.gz
+4. Gameplay Demo Video
+https://youtu.be/nbIOqtVWuHo?si=5rqzpFbI7Uvsee0o
 
 ---
 
